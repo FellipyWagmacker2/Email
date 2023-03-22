@@ -8,53 +8,55 @@
 
     <EditText
         android:id="@+id/etEmail"
-        android:layout_width="362dp"
-        android:layout_height="44dp"
+        android:layout_width="559dp"
+        android:layout_height="61dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/et_email_hint"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etAssunto"
-        android:layout_width="361dp"
-        android:layout_height="49dp"
+        android:layout_width="559dp"
+        android:layout_height="59dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/et_assunto_hint"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
     <EditText
         android:id="@+id/etTexto"
-        android:layout_width="362dp"
-        android:layout_height="371dp"
+        android:layout_width="561dp"
+        android:layout_height="251dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:gravity="top"
         android:hint="@string/et_texto_hint"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etAssunto" />
+        app:layout_constraintTop_toBottomOf="@+id/etAssunto"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnEnviar"
-        android:layout_width="361dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="117dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/btn_enviar_hint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etTexto"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/etTexto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
